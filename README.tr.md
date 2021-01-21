@@ -67,7 +67,7 @@ $ yarn add react-native-beauty-webview
 
 or
 
-$ npm install --save react-native-beauty-webview
+$ npm install --save react-native-beauty-webview 
 
 ```
 
