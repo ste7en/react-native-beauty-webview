@@ -12,6 +12,7 @@ const BeautyWebView = ({
   headerContent, // 'dark' || 'light', default 'dark'
   headerBackground, // default #fff
   url, // Required
+  customInjectedJS,
   progressColor,
   progressHeight,
   loadingText,
@@ -34,6 +35,7 @@ const BeautyWebView = ({
   const [backQueue, setBackQueue] = useState([]);
   const [forwardQueue, setForwardQueue] = useState([]);
   const [currentUrl, setCurrentUrl] = useState(url);
+  const [injectedJS, setinjectedJS] = useState(customInjectedJS);
 
   const onProgress = (progress) => {
     progressRef?.startAnimation(progress);
@@ -114,7 +116,8 @@ const BeautyWebView = ({
             let loadingProgress = nativeEvent.progress;
             onProgress(loadingProgress);
           }}
-          injectedJavaScript="window.ReactNativeWebView.postMessage(document.title)"
+          // injectedJavaScript="window.ReactNativeWebView.postMessage(document.title)"
+          injectedJavaScript={injectedJS}
           onMessage={event => setTitle(event.nativeEvent.data)}
           onLoadEnd={onLoadEnd}
           onLoadStart={onLoadStart}
