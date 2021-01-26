@@ -58,7 +58,7 @@ export const CutomMenu = ({contentType, openBrowserTitle, copyLinkTitle, url, ex
         >
           <MenuItem onPress={onPressOpenBrowser}>{openBrowserTitle}</MenuItem>
           <MenuDivider />
-          <MenuItem onPress={onPressCopy}>{copyLinkTitle}</MenuItem>
+          {/* <MenuItem onPress={onPressCopy}>{copyLinkTitle}</MenuItem> */}
           {
               (extraMenuItems && extraMenuItems.length > 0) &&
               extraMenuItems.map(renderExtraMenuItems)
