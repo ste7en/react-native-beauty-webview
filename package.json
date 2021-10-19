@@ -15,5 +15,8 @@
     "react-native copy link"
   ],
   "author": "İlker Kesici <ilkerrkesici@gmail.com> (https://github.com/ilkerkesici)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
 }
