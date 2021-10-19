@@ -10,7 +10,11 @@
   </a>
 </p>
 
-# (WIP) React Native Beauty Webview for easy usage
+# React Native Beauty Webview for easy usage
+## :stars: Diffs from the original repository
+- TypeScript interface ✅
+- SafeAreaView compliant ✅
+
 ## :star2: Features
 - Easy usage
 - Easy to configure
@@ -64,15 +68,7 @@ $ cd ios && pod install
 
 ```
 #### Install our package
-```sh
-
-$ yarn add react-native-beauty-webview
-
-or
-
-$ npm install --save react-native-beauty-webview
-
-```
+Either clone this repository and copy the src folder into your project or download the [original package](https://www.npmjs.com/package/react-native-beauty-webview) and copy the `index.d.ts` and `index.js` files.
 
 ## :flashlight: Example Usage
 ```sh
